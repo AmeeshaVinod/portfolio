@@ -1,0 +1,446 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developed by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-icon-180x180.png' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="icon">
+
+  <title>Title page</title>  
+
+  <!-- External fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'css/main.d8e0d294.css' %}" rel="stylesheet">
+
+  <!-- Inline styles for the contact form -->
+  <style>
+    /* Card Styling */
+    .card {
+      background-color: #fff;
+      border: 2px solid #ff4d94; /* Pink border */
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .card-block {
+      padding: 30px;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0; /* No extra padding since card-block provides it */
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+      color: #ff4d94; /* Pink labels */
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #f8f9fa;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-form input:hover,
+    .contact-form textarea:hover {
+      border-color: #ccc;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #ff4d94;
+      box-shadow: 0 0 5px rgba(255, 77, 148, 0.3);
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form .btn-primary {
+      background-color: #ff4d94;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .contact-form .btn-primary:hover {
+      background-color: #e04385;
+      transform: scale(1.05);
+    }
+
+    .contact-form .btn-primary:active {
+      transform: scale(0.95);
+    }
+
+    .contact-form .alert {
+      margin-top: 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .contact-form .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .contact-form .alert-danger {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .contact-form .text-danger {
+      font-size: 12px;
+      margin-top: 5px;
+      display: block;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 576px) {
+      .card-block {
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .contact-form {
+        padding: 0;
+      }
+
+      .contact-form label {
+        font-size: 14px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 14px;
+      }
+
+      .contact-form .btn-primary {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body class="">
+
+<!-- Add your content of header -->
+<div class="background-color-layer" style="background-image: url('{% static 'images/img-01.jpg' %}')"></div>
+<main class="content-wrapper">
+  <header class="white-text-container section-container">
+    <div class="text-center">
+      <h1>I am Ameesha Vinod</h1>
+      <p><b>Web Developer | Learning & Growing</b></p>
+      <p>
+        <a class="fa-icon fa-icon-2x" href="https://www.instagram.com/amie_.__/?hl=en" title="">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/ameesha-vinod-85506b251/" title="">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        
+          <a class="fa-icon fa-icon-2x" href="https://github.com/AmeeshaVinod" title="">
+  <i class="fa fa-github"></i>
+</a>
+        </a>
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="card">
+          <div class="card-block">
+            <h2>About me</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <p><img src="{% static 'images/img-01.jpg' %}" class="img-responsive" alt=""></p>
+              </div>
+              <div class="col-md-8">
+                <p>Driven by curiosity and a passion for learning, I am a Data Science student at Sacred Heart College, Thevara, currently pursuing my degree with a focus on real-world applications of technology. With a strong foundation in Python, Java, and full-stack development using the MERN stack, I aim to build smart, scalable solutions that make a difference.</p>
+                <p> My interest in Machine Learning keeps me exploring beyond the classroom—whether it's through personal projects, research, or internships. I believe in the power of data to solve problems, tell stories, and transform ideas into impact.</p>
+                <p>Graduating in May 2027, I'm excited to continue growing as a developer, thinker, and collaborator—always ready to take on new challenges and turn ideas into action.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Projects</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="{% static 'images/img-02.png' %}" class="img-responsive" alt="">
+                <h3 class="h5">Price Comparison Website</h3>
+                <p>April 2025</p>
+              </div>
+              <div class="col-md-4">
+                <img src="{% static 'images/img-03.jpg' %}" class="img-responsive" alt="">
+                <h3 class="h5">Weather App</h3>
+                <p>March 2025</p>
+              </div>
+              <div class="col-md-4">
+                <img src="{% static 'images/img-04.jpg' %}" class="img-responsive" alt="">
+                <h3 class="h5">Price Prediction of Used Mobiles(ml)</h3>
+                <p>April 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>TECHNICAL PROJECTS AND SKILLS </h2>
+            <div class="work-experience">
+              <h3 class="h5 date-title">Certification- <a href="https://www.techbyheartacademy.com/" title="Create professional website">TechbyHeart</a></h3>
+              <p>Cyber security and ethical hacking.</p>
+            </div>
+
+            <div class="work-experience">
+              <h3 class="h5 date-title">Certification- <a href="https://www.theforage.com/simulations/deloitte-au/data-analytics-s5zy" title="">Deloitte</a></h3>
+              <p>completed practical tasks in:Data analysis Forensic technology.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Education</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="education-experience">
+                  <h3 class="h5 date-title">10th(2019-2020) </h3>
+                  <p>Fatima Girls HS, Fort Kochi </p>
+                  <p>100% </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="education-experience">
+                  <h3 class="h5 date-title">12th (2021-2022)</h3>
+                  <p>St.Teresa’s C.G.HSS,ekm </p>
+                  <p>98.16%</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="education-experience">
+                  <h3 class="h5 date-title">Integrated MSc Computer Science-Data Science(2022-2027)</h3>
+                  <p> Sacred Heart College, Thevara </p>
+                  <p> 4.18 out of 5 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Language</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="language-experience">
+                  <h3 class="h5">English <small>Bilingual</small></h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="language-experience">
+                  <h3 class="h5">Malayalam <small>Fluent</small></h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="language-experience">
+                  <h3 class="h5">Hindi <small>Fluent</small></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Projects</h2>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="{% static 'images/img-05.png' %}" class="img-responsive" alt="...">
+                  <div class="carousel-caption">
+                    <h3 class="h5">Project-1</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/img-06.png' %}" class="img-responsive" alt="...">
+                  <div class="carousel-caption">
+                    <h3 class="h5">Project-2</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/img-08.png' %}" class="img-responsive" alt="...">
+                  <div class="carousel-caption">
+                    <h3 class="h5">Project-3</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Social Network</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://www.instagram.com/amie_.__/?hl=en" title=""><span class="social-round-icon fa-icon"><i class="fa fa-instagram"></i></span>@amie_.__</a></p>
+              </div>
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://www.linkedin.com/in/ameesha-vinod-85506b251/" title=""><span class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Ameesha Vinod</a></p>
+              </div>
+              <div class="col-md-3">
+    <p class="social-buttons">
+        <a href="https://github.com/AmeeshaVinod" title="">
+            <span class="social-round-icon fa-icon"><i class="fa fa-github"></i></span>
+            AmeeshaVinod
+        </a>
+    </p>
+</div>
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="http://vsco.co/ameeshavinod" title=""><span class="social-round-icon fa-icon"><i class="fa fa-camera"></i></span>ameeshavinod vsco</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Contact Me</h2>
+            <form method="post" class="reveal-content contact-form">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="id_name">Name</label>
+                {{ form.name }}
+                {% if form.name.errors %}
+                  <small class="text-danger">{{ form.name.errors.as_text }}</small>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                <label for="id_email">Email</label>
+                {{ form.email }}
+                {% if form.email.errors %}
+                  <small class="text-danger">{{ form.email.errors.as_text }}</small>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                <label for="id_message">Message</label>
+                {{ form.message }}
+                {% if form.message.errors %}
+                  <small class="text-danger">{{ form.message.errors.as_text }}</small>
+                {% endif %}
+              </div>
+              {% if form.non_field_errors %}
+                <div class="alert alert-danger">
+                  {% for error in form.non_field_errors %}
+                    {{ error }}
+                  {% endfor %}
+                </div>
+              {% endif %}
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+            {% if request.GET.success %}
+              <div class="alert alert-success">
+                Your message has been sent successfully!
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer class="footer-container white-text-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><img src="{% static 'images/mashup-icon.svg' %}" alt=""></p>
+        <p>©All rights reserved.</p>
+        <p>
+          <a class="fa-icon fa-icon-2x" href="https://www.instagram.com/amie_.__/?hl=en" title="">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/ameesha-vinod-85506b251/" title="">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="http://vsco.co/ameeshavinod" title="">
+            <i class="fa fa-vimeo"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static 'js/main.bc58148c.js' %}"></script>
+</body>
+</html>
