@@ -125,12 +125,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Your existing static directory
-]
-STATIC_ROOT = BASE_DIR / "staticfiles"  # New directory for collected static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+DEBUG = False
+ALLOWED_HOSTS = ['ameeshavinod.pythonanywhere.com', '127.0.0.1', 'localhost']
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
